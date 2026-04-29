@@ -1,8 +1,8 @@
-<?php // config.php — подставь свои данные под импорт full_db.sql (БД shop_exam)
+<?php // Готовый конфиг под импорт full_db.sql (БД shop_exam, пользователь lehh)
 const DB_HOST = '127.0.0.1';
 const DB_NAME = 'shop_exam';
-const DB_USER = 'root';
-const DB_PASS = '';
+const DB_USER = 'lehh';
+const DB_PASS = 'lehh123_!';
 const DB_PORT = '3306';
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
