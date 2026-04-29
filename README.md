@@ -5,13 +5,7 @@
 ## Скачать одной командой
 
 ```bash
-git clone <URL-ТВОЕГО-РЕПОЗИТОРИЯ>.git
-```
-
-Пример:
-
-```bash
-git clone https://github.com/USERNAME/shop_exam.git
+git clone https://github.com/IIIKA8/GuidesFast.git
 ```
 
 ## Установка БД
