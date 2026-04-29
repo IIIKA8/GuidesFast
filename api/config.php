@@ -1,5 +1,5 @@
 <?php // Готовый конфиг под импорт full_db.sql (БД shop_exam, пользователь lehh)
-const DB_HOST = '127.0.0.1';
+const DB_HOST = 'localhost';
 const DB_NAME = 'shop_exam';
 const DB_USER = 'lehh';
 const DB_PASS = 'lehh123_!';
