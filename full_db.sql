@@ -1,4 +1,4 @@
--- Full DB script for shop_exam/var2 demo
+-- Full DB script for shop_exam demo
 -- Import in MySQL Workbench or mysql CLI.
 
 CREATE DATABASE IF NOT EXISTS `shop_exam`
