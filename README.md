@@ -4,17 +4,42 @@
 
 ## Скачать одной командой
 
+Если просто выполнить `git clone ...` в домашней папке, Git создаст каталог **`GuidesFast`** — это нормально (имя репозитория). На сервере обычно нужно **без лишней папки**, сразу в корень сайта.
+
+### Сразу в `/var/www/html` (рекомендуется)
+
+Каталог должен быть **пустым** (или такого пути ещё нет):
+
 ```bash
-git clone https://github.com/IIIKA8/GuidesFast.git
+sudo git clone https://github.com/IIIKA8/GuidesFast.git /var/www/html
 ```
+
+Тогда `index.php`, `api/`, `frontend/` окажутся **прямо** в `html`, без `GuidesFast`.
+
+Если `html` уже существует и **пустой**:
+
+```bash
+cd /var/www/html
+sudo git clone https://github.com/IIIKA8/GuidesFast.git .
+```
+
+(точка в конце — «склонировать содержимое сюда»).
+
+### Если уже скачалось в папку GuidesFast
+
+Скопировать содержимое в корень сайта (включая скрытые вроде `.git`):
+
+```bash
+sudo cp -r GuidesFast/. /var/www/html/
+```
+
+Либо удалить старое и заново клонировать командой `git clone ... /var/www/html` выше.
 
 ## Установка БД
 
 Импортируй `full_db.sql` в MySQL (Workbench или `mysql < full_db.sql`).
 
 Настрой подключение в `api/config.php` (хост, имя БД `shop_exam`, логин, пароль).
-
-Скопируй содержимое репозитория в корень веб-сервера (например `/var/www/html/`) или настрой виртуальный хост.
 
 ## Вход (из дампа)
 
